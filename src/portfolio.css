@@ -1,0 +1,296 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.menuicon{
+    display: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+a:hover{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+/* Buttons */
+
+.btn{
+    background-color: green;
+    color: white;
+    width:100px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1{
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: green;
+}
+
+/* Logo Name */
+
+.name{
+    color: green;
+}
+
+/* Home Section */
+
+.home{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px;
+   gap: 20px;
+   background: radial-gradient(black,green);
+   margin-top: -50px;
+}
+
+.text{
+    color: white;
+}
+
+.content1{
+    flex: 1;
+    margin-top: 100px;
+    color: white;
+}
+
+.me{
+    color: green;
+}
+
+.pic{
+    width: 250px;
+    max-width: 100%;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+/* About Section */
+
+.mainabout{
+    background:radial-gradient(green,black);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about{
+    color: green;
+}
+
+.abouttext{
+    color: white;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.pic2{
+    width: 400px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+/* Skills Section */
+
+.skills{
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(black,green);
+}
+
+.skillmain{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skillstart{
+    margin-top: 50px;
+}
+
+.skillhead{
+    color: white;
+}
+
+.myskills{
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.myskills:hover{
+    background-color: green;
+    transform: scale(1.05);
+}
+
+.skillheading{
+    color: green;
+}
+
+/* Contact Section */
+
+.contactmain{
+    background:radial-gradient(green,black);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contacthead{
+    color: green;
+}
+
+.contactdetails{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.contactitem{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contactlogo{
+    width: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+/* Smooth Scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#home{
+    scroll-margin-top: 100px;
+}
+
+#skills{
+    scroll-margin-top: 80px;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 768px){
+
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menuicon{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+    }
+
+    .navbar.active{
+        display: flex;
+    }
+
+    .pic{
+        margin-top: 30px;
+    }
+
+    .content1{
+        margin-top: 40px;
+    }
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px){
+
+    .main{
+        padding: 10px;
+    }
+
+    .home{
+        padding: 20px;
+    }
+
+    .pic{
+        width: 220px;
+    }
+
+    .pic2{
+        width: 220px;
+    }
+
+    .contactitem{
+        font-size: 16px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contactlogo{
+        font-size: 24px;
+    }
+
+    .btn1{
+        width: 170px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,209 @@
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+a:hover{
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    width:100px;
+    height: 30px;
+    white-space: nowrap;
+}
+
+.btn1{
+    margin-left: 10px;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: black;
+
+}
+
+.name{
+    color: green;
+    white-space: nowrap;
+}
+
+.home{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px;
+   gap: 20px;
+   background: radial-gradient(black,green)
+}
+.text{
+    color: white;
+}
+
+.content1{
+    flex: 1;
+    margin-top: 100px;
+}
+.me{
+    color: green;
+}
+
+.pic{
+    width: 300px;
+    max-width: 100%;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+.mainabout{
+    background:radial-gradient(green,black);
+    padding: 50px 20px;
+    text-align: center;
+}
+.about{
+    color: green;
+}
+.abouttext{
+    color: black;
+}
+
+.pic2{  
+    width: 300px;
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.skills{
+    text-align: center;
+    padding: 20px;
+    background: radial-gradient(black,green);
+}
+
+.skillmain{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.skillstart{
+    margin-top: 90px;
+    gap: 20px;
+    
+}
+.skilhead{
+    color: white;
+}
+
+.myskills{
+    padding: 8px 16px;
+    border-radius: 6px;
+    border-style: groove;
+}
+.skillheading{
+    color: green;
+}
+
+.contactmain{
+    background:radial-gradient(green,black);
+    padding: 50px 20px;
+    text-align: center;
+}
+.contacthead{
+    color: green;
+}
+.contdetails{
+    margin-bottom: -22px;
+}
+input, textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+textarea{
+    height: 80px;
+}
+
+.btn2{
+    background-color: green;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#home{
+    scroll-margin-top: 100px;
+}
+
+#skills{
+    scroll-margin-top: 80px;
+}
+@media (max-width: 768px){
+    .home{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar{
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    .main{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home{
+        padding: 20px;
+    }
+
+    .pic{
+        width: 200px;
+    }
+
+    .pic2{
+        width: 200px;
+    }
+}
