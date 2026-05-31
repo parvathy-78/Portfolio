@@ -32,20 +32,30 @@ a:hover{
 }
 
 .btn{
-    background-color: green;
+    background-color: black;
     color: white;
     width:100px;
     height: 30px;
     white-space: nowrap;
+    margin-top: 3px;
+}
+.btn:hover{
+    background-color: green;
+    color: black;
 }
 
 .btn1{
     margin-left: 10px;
-    height: 30px;
-    width: 100px;
+    height: 50px;
+    width: 200px;
     color: white;
     background-color: black;
+    border-radius: 10px;
 
+}
+.btn1:hover{
+    background-color: green;
+    color: black;
 }
 
 .name{
@@ -120,12 +130,14 @@ a:hover{
 }
 .skilhead{
     color: white;
+
 }
 
 .myskills{
     padding: 8px 16px;
     border-radius: 6px;
     border-style: groove;
+
 }
 .skillheading{
     color: green;
@@ -138,9 +150,12 @@ a:hover{
 }
 .contacthead{
     color: green;
+    margin-top: -20px;
+
 }
 .contdetails{
     margin-bottom: -22px;
+    margin-top: 100px;
 }
 input, textarea{
     width: 100%;
@@ -174,16 +189,31 @@ html{
 #skills{
     scroll-margin-top: 80px;
 }
-@media (max-width: 768px){
-    .home{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar{
-        justify-content: center;
-    }
+.menu-icon{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
 }
+
+.icon-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.contact-icon{
+    font-size:40px;
+    color:white;
+    transition:0.3s;
+}
+
+.contact-icon:hover{
+    color:green;
+    transform:scale(1.2);
+}
+
 @media (max-width: 480px){
     .main{
         flex-direction: column;
@@ -205,5 +235,160 @@ html{
 
     .pic2{
         width: 200px;
+    }
+}
+.menu-icon{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.icon-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+.contact-icon{
+    font-size:40px;
+    color:white;
+    transition:0.3s;
+}
+
+.contact-icon:hover{
+    color:green;
+    transform:scale(1.2);
+}
+.contact-item{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:25px;
+    color:white;
+    font-size:18px;
+}
+
+.contact-icon{
+    font-size:28px;
+    color:green;
+}
+/* ================= RESPONSIVE ================= */
+
+@media screen and (max-width: 768px){
+
+    .main{
+        padding:15px 20px;
+        position:relative;
+    }
+
+    .menu-icon{
+        display:block;
+        z-index:1001;
+    }
+
+    .navbar{
+        display:none;
+        position:absolute;
+        top:70px;
+        right:10px;
+        width:220px;
+        background:black;
+        flex-direction:column;
+        align-items:center;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:30px 20px;
+    }
+
+    .content1{
+        margin-top:20px;
+    }
+
+    .pic{
+        width:220px;
+        margin-top:20px;
+    }
+
+    .mainabout{
+        padding:40px 20px;
+    }
+
+    .abouttext{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    .pic2{
+        width:220px;
+    }
+
+    .skillstart{
+        margin-top:40px;
+    }
+
+    .skillmain{
+        gap:10px;
+    }
+
+    .myskills{
+        min-width:100px;
+    }
+
+    .contact-item{
+        flex-direction:column;
+        gap:8px;
+        font-size:15px;
+        word-break:break-word;
+        padding:0 15px;
+    }
+
+    .contact-icon{
+        font-size:30px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .name{
+        font-size:22px;
+    }
+
+    .me{
+        font-size:32px;
+    }
+
+    .text{
+        font-size:20px;
+    }
+
+    .btn1{
+        width:160px;
+        height:45px;
+    }
+
+    .pic{
+        width:180px;
+    }
+
+    .pic2{
+        width:180px;
+    }
+
+    .contact-item span{
+        font-size:14px;
     }
 }
