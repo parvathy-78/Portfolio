@@ -1,8 +1,12 @@
 {
+  "private": true,
+  "scripts": {
+    "dev": "cd Portfolio && npm run dev",
+    "build": "cd Portfolio && npm run build",
+    "preview": "cd Portfolio && npm run preview"
+  },
   "dependencies": {
     "react-icons": "^5.6.0"
   },
-  "devDependencies": {
-    "vite": "^8.0.14"
-  }
+  "postinstall": "cd Portfolio && npm install"
 }
