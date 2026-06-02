@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "build": {
+    "command": "cd Portfolio && npm install && npm run build",
+    "outputDirectory": "Portfolio/dist"
+  }
+}

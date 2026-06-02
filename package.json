@@ -1,5 +1,8 @@
 {
   "private": true,
+  "workspaces": [
+    "Portfolio"
+  ],
   "scripts": {
     "dev": "cd Portfolio && npm run dev",
     "build": "cd Portfolio && npm run build",
@@ -7,6 +10,5 @@
   },
   "dependencies": {
     "react-icons": "^5.6.0"
-  },
-  "postinstall": "cd Portfolio && npm install"
+  }
 }
