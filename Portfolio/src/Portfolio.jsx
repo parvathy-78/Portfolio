@@ -171,6 +171,14 @@ const Portfolio = () => {
             </a>
           ))}
         </nav>
+        <div className="actions">
+          <button
+            className="menu-toggle"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </header>
 
       <main>
@@ -236,7 +244,6 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="section-head">
-            <p className="section-label">About</p>
             <h3>Professional Background</h3>
           </div>
           <div className="about-layout">
@@ -275,7 +282,6 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="section-head">
-            <p className="section-label">Skills</p>
             <h3>Technical Expertise</h3>
           </div>
           <div className="skills-grid">
@@ -302,7 +308,6 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="section-head">
-            <p className="section-label">Projects</p>
             <h3>Featured Work</h3>
           </div>
 
@@ -349,7 +354,6 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="section-head">
-            <p className="section-label">Achievements</p>
             <h3>Certifications & Highlights</h3>
           </div>
           <div className="achievements-grid">
@@ -372,7 +376,6 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="section-head">
-            <p className="section-label">Contact</p>
             <h3>Let's Collaborate</h3>
           </div>
           <div className="contact-layout">
@@ -382,7 +385,7 @@ const Portfolio = () => {
                 I am available for new opportunities and freelance work. Send a message to discuss your project or collaboration.
               </p>
               <div className="contact-items">
-                <div className="contact-line"><MdEmail /> <a href="mailto:parvathysatheesan78@gmail.com">parvathysatheesan78@gmail.com</a></div>
+                <div className="contact-line"><MdEmail />parvathysatheesan78@gmail.com</div>
                 <div className="contact-line"><FaPhone /> <span>+91 8714894412</span></div>
                 <div className="contact-line"><FaLinkedin /> <a href="https://www.linkedin.com/in/parvathy-s-0287313b5?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></div>
                 <div className="contact-line"><FaGithub /> <a href="https://github.com/parvathy-78">GitHub</a></div>
