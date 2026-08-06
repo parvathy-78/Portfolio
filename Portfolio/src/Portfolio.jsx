@@ -314,7 +314,6 @@ const Portfolio = () => {
           <motion.article className="project-featured" whileHover={{ y: -10 }}>
             <div className="project-visual">
               <img src={projectBanner} alt="Savira Beauty Launch" />
-              <div className="project-pill">Featured Project</div>
             </div>
             <div className="project-details">
               <div className="project-meta">
@@ -334,6 +333,39 @@ const Portfolio = () => {
               </div>
               <div className="badges project-badges">
                 {['Python', 'Django', 'HTML', 'CSS', 'Bootstrap', 'SQLite'].map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+              <div className="project-actions">
+                <button className="btn inline" onClick={() => scrollTo('contactsec')}>Contact Me</button>
+              </div>
+            </div>
+          </motion.article>
+
+          <motion.article className="project-featured project-text-only" whileHover={{ y: -10 }}>
+            <div className="project-details project-details-text">
+              <div className="project-meta">
+                <h4>Adysive – Creative Branding & Digital Agency Website</h4>
+                <p className="project-type">Full Stack Web Development</p>
+              </div>
+              <p className="project-description">
+                Adysive is a modern creative agency website developed using Django. The website showcases branding, advertising, web development, and digital marketing services through a clean, responsive, and interactive interface.
+                It is designed with a professional business-focused layout, smooth scrolling sections, reusable Django templates, and optimized static asset management.
+              </p>
+              <div className="project-list">
+                <span>Fully responsive design</span>
+                <span>Single-page scrolling experience</span>
+                <span>Modern UI with smooth animations</span>
+                <span>Django template inheritance & reusable components</span>
+                <span>Service showcase and portfolio sections</span>
+                <span>Careers page with job application form</span>
+                <span>Contact form with email integration</span>
+                <span>Static file optimization with WhiteNoise</span>
+                <span>Production deployment configuration</span>
+                <span>Clean, scalable project structure</span>
+              </div>
+              <div className="badges project-badges">
+                {['Python', 'Django', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'WhiteNoise', 'Gunicorn'].map((tech) => (
                   <span key={tech}>{tech}</span>
                 ))}
               </div>
